@@ -3,33 +3,46 @@
     <!--navbar-->
 
     <div class="col-sm-8">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand" href="#">ORA Services (l)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services & Solutions</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Conception et Developpement logiciel</a>
+                <a class="dropdown-item" href="#">Développement web </a>
+                <a class="dropdown-item" href="#">Administration réseau</a>
+                <a class="dropdown-item" href="#">Virtualisation</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A propos</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">ORA Services</a>
+                <a class="dropdown-item" href="#">Qui sommes-nous ?</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product & Services</a>
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Se connecter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Groopy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">The Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign In</a>
+              <a class="nav-link" href="#">S'inscrire</a>
             </li>
           </ul>
         </div>
       </nav>
+
     </div>
 
     <!--end navbar-->
