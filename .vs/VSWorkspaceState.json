@@ -3,8 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\body"
+    "\\src\\app\\auth",
+    "\\src\\app\\auth\\signup",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\app.component.ts",
+  "SelectedNode": "\\src\\app\\services\\auth.service.ts",
   "PreviewInSolutionExplorer": false
 }

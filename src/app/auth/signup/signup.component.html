@@ -1,30 +1,38 @@
 <section>
-<div class="container">
-  <div class="row justify-content-around">
-    <div class="col-4">
-      <img src="../../assets/images/image-overview.svg" class="rounded mx-auto d-block" width="500" height="550" />
-    </div>
-    <div class="col-4">
-      <blockquote class="blockquote text-center">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><br />
-      </blockquote><br />
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-4">
+        <img src="../../assets/images/image-overview.svg" class="rounded mx-auto d-block" width="500" height="550" />
+      </div>
+      <div class="col-4">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+          <blockquote class="blockquote text-center">
+            <h1 class="display-11"><p class="mb-0 font-weight-light">Profitez de nos services et solutions dès maintenant !</p></h1><br />
+          </blockquote><br />
+          <p class="text-danger">{{errorMessage}}</p>
+          <form (ngSubmit)="onSubmit()" [formGroup]="signUpForm">
+            <div class="form-group">
+              <label for="inputEmail1">adresse Email</label>
+              <input type="text" class="form-control" formControlName="email" id="inputEmail1" aria-describedby="emailHelp" placeholder="Entrer l'email">
+              <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email avec qui que ce soit.</small>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword1">Mot de passe</label>
+              <input type="password" formControlName="password" class="form-control" id="inputPassword1" placeholder="Mot de passe">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="check">
+              <label class="form-check-label" for="check">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Commencer</button>
+          </form>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
     </div>
   </div>
-</div>
 </section>
