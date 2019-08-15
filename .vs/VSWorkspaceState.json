@@ -3,10 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\auth",
-    "\\src\\app\\auth\\signup",
-    "\\src\\app\\services"
+    "\\src\\app\\body",
+    "\\src\\app\\footer",
+    "\\src\\app\\header",
+    "\\src\\app\\ora",
+    "\\src\\app\\ora\\wax",
+    "\\src\\app\\ora\\wax\\footer-wax"
   ],
-  "SelectedNode": "\\src\\app\\services\\auth.service.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }

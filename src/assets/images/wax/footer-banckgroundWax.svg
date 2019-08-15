@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 608.92">
+    <defs>
+        <style>.cls-1{fill:#0b061e;}.cls-2{fill:#1b1140;opacity:0.3;isolation:isolate;}</style>
+    </defs>
+    <title>sss</title>
+    <g id="Group_2945" data-name="Group 2945">
+        <path class="cls-1"
+              d="M1920,185.35C1718.59,120,1590.54,7.19,1395.84.37,1161.05-7.85,943.48,121.68,534.21,175.13S0,129.9,0,129.9v479H1920Z"
+              transform="translate(0 0)"/>
+        <path class="cls-2"
+              d="M1911.86,608.92C1818,544.28,1651.12,441.77,1525.09,433c-158.3-11.05-316.6,133.62-453.4,175.95Z"
+              transform="translate(0 0)"/>
+        <path class="cls-2" d="M0,608.92H924.1C754.74,568.22,490.75,433,379.12,433,263.69,433,50.19,568.75,0,601.75Z"
+              transform="translate(0 0)"/>
+    </g>
+</svg>

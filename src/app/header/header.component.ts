@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  onWax: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  changeStatusWax() {
+    this.onWax = true;
+  }
 }

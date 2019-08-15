@@ -16,14 +16,26 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BodyComponent } from './body/body.component';
+import { WaxComponent } from './ora/wax/wax.component';
+import { HeaderWaxComponent } from './ora/wax/header-wax/header-wax.component';
+import { FooterWaxComponent } from './ora/wax/footer-wax/footer-wax.component';
+import { TestComponent } from './ora/wax/test/test.component';
+
 
 const appRoutes: Routes = [
-  { path: 'auth/signup', component: SignupComponent },
-  { path: 'auth/signin', component: SigninComponent },
-  { path: 'request-list', component: RequestListComponent },
-  { path: 'request-list/new', component: RequestFormComponent },
-  { path: 'request-list/view/:id', component: SingleRequestComponent },
-  { path: '', component: BodyComponent }
+  { path: 'ora/wax', component: WaxComponent, children: [
+      { path: 'test', component: TestComponent }
+    ]
+  },
+  {
+    path: '', component: BodyComponent, children: [
+      { path: 'auth/signup', component: SignupComponent },
+      { path: 'auth/signin', component: SigninComponent },
+      { path: 'request-list', component: RequestListComponent },
+      { path: 'request-list/new', component: RequestFormComponent },
+      { path: 'request-list/view/:id', component: SingleRequestComponent }
+    ]
+  }
 ]
 
 @NgModule({
@@ -36,7 +48,11 @@ const appRoutes: Routes = [
     RequestListComponent,
     RequestFormComponent,
     SingleRequestComponent,
-    BodyComponent
+    BodyComponent,
+    WaxComponent,
+    HeaderWaxComponent,
+    FooterWaxComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

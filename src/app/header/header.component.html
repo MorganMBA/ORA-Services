@@ -3,8 +3,8 @@
     <!--navbar-->
 
     <div class="col-sm-8">
-      <nav class="navbar navbar-expand-xl navbar-light">
-        <a class="navbar-brand" href="">ORA Services (l)</a>
+      <nav class="navbar navbar-expand-xl navbar-light" *ngIf="onWax == false">
+        <a class="navbar-brand" href="">ORA (l)</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -12,19 +12,18 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services & Solutions</a>
+                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ORA et Ses services</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Conception et Developpement logiciel</a>
-                <a class="dropdown-item" href="#">Développement web </a>
-                <a class="dropdown-item" href="#">Administration réseau</a>
-                <a class="dropdown-item" href="#">Virtualisation</a>
+                <a class="dropdown-item" routerLink="ora/wax" (onClick)="changeStatusWax()" target="_blank">ORA WAX </a>
+                <a class="dropdown-item" href="#">ORA L&V </a>
+                <a class="dropdown-item" href="#">ORA'TECH</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A propos</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">ORA Services</a>
+                <a class="dropdown-item" href="#">ORA </a>
                 <a class="dropdown-item" href="#">Qui sommes-nous ?</a>
               </div>
             </li>
@@ -34,7 +33,7 @@
           </ul>
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" routerLink="auth/signin">Se connecter</a>
+              <a class="nav-link" routerLink="auth/signin">Connexion</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="auth/signup">S'inscrire</a>
