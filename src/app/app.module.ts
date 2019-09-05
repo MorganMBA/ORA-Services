@@ -19,12 +19,12 @@ import { BodyComponent } from './body/body.component';
 import { WaxComponent } from './ora/wax/wax.component';
 import { HeaderWaxComponent } from './ora/wax/header-wax/header-wax.component';
 import { FooterWaxComponent } from './ora/wax/footer-wax/footer-wax.component';
-import { TestComponent } from './ora/wax/test/test.component';
-
+import { BodyWaxComponent } from './ora/wax/body-wax/body-wax.component';
 
 const appRoutes: Routes = [
-  { path: 'ora/wax', component: WaxComponent, children: [
-      { path: 'test', component: TestComponent }
+  {
+    path: 'ora/wax', component: WaxComponent, children: [
+      { path: '', component: BodyWaxComponent }
     ]
   },
   {
@@ -52,7 +52,7 @@ const appRoutes: Routes = [
     WaxComponent,
     HeaderWaxComponent,
     FooterWaxComponent,
-    TestComponent
+    BodyWaxComponent
   ],
   imports: [
     BrowserModule,

@@ -32,7 +32,12 @@ ul.social-network li {
   background-color: #c32aa3;
 }
 
-.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoInstagram:hover i {
+.social-network a.icoPinterest:hover {
+  background-color: #bd081c;
+}
+
+
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoInstagram:hover i, .social-network a.icoPinterest:hover i {
   color: #fff;
 }
 
@@ -87,3 +92,47 @@ a.socialIcon:hover, .socialHoverClass {
 .account {
   color:black;
 }
+
+/* Bouton recherche*/
+form.example input[type=text] {
+  padding-bottom:20px;
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+#navbar {
+  padding: 6px 0;
+  height: 54px;
+  box-sizing: border-box;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.py-1 {
+  padding-top: .25rem !important;
+}
+.mb-2, .my-2 {
+  margin-bottom: .5rem !important;
+}
+
+

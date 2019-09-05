@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\auth",
+    "\\src\\app\\auth\\signup",
     "\\src\\app\\body",
     "\\src\\app\\footer",
-    "\\src\\app\\header",
     "\\src\\app\\ora",
     "\\src\\app\\ora\\wax",
-    "\\src\\app\\ora\\wax\\footer-wax"
+    "\\src\\app\\ora\\wax\\body-wax"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\footer\\footer.component.ts",
   "PreviewInSolutionExplorer": false
 }
